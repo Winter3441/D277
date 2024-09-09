@@ -1,0 +1,205 @@
+/* Basic Body Style */
+body {
+    background-color: #FAF3E0;
+    color: #3E3E3E;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+header {
+    background-color: #003366;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Relative positioning for header */
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive; /* Header Font for "Brush Script" */
+    font-size: 48px;
+}
+
+/* Navigation Style */
+nav {
+    text-align: center;
+    background-color: #FFD700; /* California Gold for the navigation bar */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #003366; /* Dark Blue for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Hover effect for navigation buttons */
+}
+
+/* Main Style */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contact Image Styling */
+.contact-image {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Style */
+footer {
+    background-color: #FFD700; /* California Gold for the footer */
+    color: #003366; /* Dark Blue text */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Relative positioning for footer */
+}
+
+/* Footer Links */
+footer a {
+    color: #003366; /* Dark Blue for link text */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Hover effect for footer links */
+}
+
+/* Form Style */
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+/* Form Input and Textarea Fields */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Form Submit Button */
+form input[type="submit"] {
+    background-color: #003366; /* Dark Blue for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+form input[type="submit"]:hover {
+    background-color: #002244; /* Darker blue for hover */
+}
+
+/* Table Styling */
+.table-5x5 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-5x5 th,
+.table-5x5 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-5x5 th {
+    background-color: #003366; /* Dark Blue for table header */
+    color: white;
+    text-align: left;
+}
+
+
+aside ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+aside ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+.align-center {
+    text-align: center;
+}
+
+
+.float-right {
+    float: right; /* Float property to position elements to the side */
+    margin: 0 20px 20px 0;
+}
+
+.relative-position {
+    position: relative; /* Relative positioning for additional control */
+}
+
+.absolute-position {
+    position: absolute; /* Absolute positioning for specific elements */
+    top: 10px;
+    right: 10px;
+}
+
+/* Element Selector */
+h1 {
+    color: #003366; /* Dark Blue for all H1 elements */
+}
+
+/* Class Selector */
+.form-group {
+    margin-bottom: 20px; /* Used for form fields spacing */
+}
+
+#site-title {
+    color: #FFFFFF; /* White color */
+}
+
+/* ID Selector */
+#unique-element {
+    background-color: #FFD700; /* Unique background color for specific element */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
