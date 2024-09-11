@@ -1,10 +1,14 @@
 /* Basic Body Style */
 body {
+    position: absolute; /* Absolute positioning for the body */
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
     background-color: #FAF3E0;
     color: #3E3E3E;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 /* Header Style */
@@ -17,7 +21,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Brush Script MT', cursive; /* Header Font for "Brush Script" */
+    font-family: 'Brush Script MT', cursive;
     font-size: 48px;
     color: #FFFFFF;
 }
@@ -25,7 +29,7 @@ header h1 {
 /* Navigation Style */
 nav {
     text-align: center;
-    background-color: #FFD700; /* California Gold for the navigation bar */
+    background-color: #FFD700;
     padding: 10px;
 }
 
@@ -41,19 +45,30 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #003366; /* Dark Blue for navigation links */
+    color: #003366;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Hover effect for navigation buttons */
+    text-decoration: underline;
 }
 
-/* Main Style */
+/* Main Content */
 main {
     padding: 20px;
     text-align: center;
+}
+
+/* Aside element with Float */
+aside {
+    float: right; /* Float property to position the aside element on the right */
+    width: 25%;
+    padding: 10px;
+    background-color: #FFD700; /* California Gold for aside */
+    color: #003366;
+    border-radius: 5px;
+    margin-right: 20px;
 }
 
 /* Contact Image Styling */
@@ -64,26 +79,17 @@ main {
     height: auto;
 }
 
-/* Footer Style */
+/* Footer Style with Relative Positioning */
 footer {
-    background-color: #FFD700; /* California Gold for the footer */
-    color: #003366; /* Dark Blue text */
+    background-color: #FFD700;
+    color: #003366;
     padding: 20px;
     text-align: center;
     position: relative; /* Relative positioning for footer */
+    margin-top: 20px;
 }
 
-/* Footer Links */
-footer a {
-    color: #003366; /* Dark Blue for link text */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline; /* Hover effect for footer links */
-}
-
-/* Form Style */
+/* Form Styling */
 form {
     margin: 20px auto;
     max-width: 600px;
@@ -94,7 +100,6 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Labels */
 form label {
     display: block;
     font-size: 16px;
@@ -102,7 +107,6 @@ form label {
     margin: 10px 0 5px;
 }
 
-/* Form Input and Textarea Fields */
 form input[type="text"],
 form input[type="email"],
 form textarea {
@@ -111,25 +115,21 @@ form textarea {
     margin-bottom: 20px;
     border: 1px solid #DDD;
     border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 14px;
 }
 
-/* Form Submit Button */
 form input[type="submit"] {
-    background-color: #003366; /* Dark Blue for the button */
+    background-color: #003366;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    display: block;
     margin: 0 auto;
 }
 
 form input[type="submit"]:hover {
-    background-color: #002244; /* Darker blue for hover */
+    background-color: #002244;
 }
 
 /* Table Styling */
@@ -145,59 +145,28 @@ form input[type="submit"]:hover {
 }
 
 .table-5x5 th {
-    background-color: #003366; /* Dark Blue for table header */
+    background-color: #003366;
     color: white;
     text-align: left;
 }
 
-/* List Styling */
-aside ol {
-    list-style-type: decimal;
-    padding-left: 20px;
-}
-
-aside ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* Alignment and Positioning */
-.align-center {
-    text-align: center;
-}
-
-.float-right {
-    float: right; /* Float property to position elements to the side */
-    margin: 0 20px 20px 0;
-}
-
-.relative-position {
-    position: relative; /* Relative positioning for additional control */
-}
-
-.absolute-position {
-    position: absolute; /* Absolute positioning for specific elements */
-    top: 10px;
-    right: 10px;
-}
-
 /* Element Selector */
 h1 {
-    color: #003366; /* Dark Blue for all H1 elements */
+    color: #003366;
 }
 
 /* Class Selector */
 .form-group {
-    margin-bottom: 20px; /* Used for form fields spacing */
+    margin-bottom: 20px;
 }
 
 /* ID Selector */
 #site-title {
-    color: #FFFFFF; /* White color */
+    color: #FFFFFF;
 }
 
 #unique-element {
-    background-color: #FFD700; /* Unique background color for specific element */
+    background-color: #FFD700;
     padding: 10px;
     border-radius: 5px;
 }
@@ -205,11 +174,11 @@ h1 {
 /* Reference Page Styling */
 .reference-page {
     padding: 20px;
-    background-color: #FAF3E0; /* Sand color for background */
+    background-color: #FAF3E0;
 }
 
 .reference-page h1 {
-    color: #003366; /* Dark Blue for header */
+    color: #003366;
 }
 
 .reference-page ol {
@@ -222,10 +191,9 @@ h1 {
 
 .reference-page aside {
     padding: 10px;
-    background-color: #FFD700; /* California Gold for aside */
+    background-color: #FFD700;
     color: #003366;
     border-radius: 5px;
 }
-
 
 
