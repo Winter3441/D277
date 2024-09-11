@@ -1,15 +1,12 @@
 /* Basic Body Style */
 body {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
     background-color: #FAF3E0;
     color: #3E3E3E;
     font-family: Arial, sans-serif;
-    min-height: 100vh; /* Ensures body takes at least full viewport height */
+    margin: 0;
+    padding: 0;
+    position: absolute; /* Absolute positioning for the body */
+    width: 100%;
 }
 
 /* Header Style */
@@ -18,19 +15,18 @@ header {
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
-    position: relative;
+    position: relative; /* Relative positioning for header */
 }
 
 header h1 {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Brush Script MT', cursive; /* Header Font for "Brush Script" */
     font-size: 48px;
-    color: #FFFFFF;
 }
 
 /* Navigation Style */
 nav {
     text-align: center;
-    background-color: #FFD700;
+    background-color: #FFD700; /* California Gold for the navigation bar */
     padding: 10px;
 }
 
@@ -46,50 +42,63 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #003366;
+    color: #003366; 
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Hover effect for navigation buttons */
 }
 
-/* Main Content */
+/* Main Style */
 main {
     padding: 20px;
-    text-align: left;
-    overflow: auto; /* Ensures the content doesn't overlap */
-    min-height: 600px; /* Ensures enough space for the aside content */
+    text-align: center;
 }
 
-/* Aside element with Float */
+/* Article and Aside Layout */
+article {
+    float: left; /* Make the article float to the left */
+    width: 70%; /* 70% width for the main article content */
+    padding: 20px;
+}
+
 aside {
-    float: right;
-    width: 25%;
-    padding: 10px;
-    background-color: #FFD700;
-    color: #003366;
-    border-radius: 5px;
-    margin-right: 20px;
-    margin-top: 20px;
-    height: auto;
-    max-height: 400px; /* Limit the height of aside */
-    box-sizing: border-box;
+    float: right; /* Float aside to the right of the article */
+    width: 25%; /* Width of aside */
+    padding: 20px;
+    background-color: #F4F4F4; 
+    border-left: 1px solid #ddd; 
+
+/* Clearfix for Main Content */
+main::after {
+    content: "";
+    display: table;
+    clear: both; /* Clear floats for article and aside */
 }
 
-/* Footer Style with Clearfix for Aside */
+/* Footer Style */
 footer {
-    background-color: #FFD700;
-    color: #003366;
+    background-color: #FFD700; 
+    color: #003366; 
     padding: 20px;
     text-align: center;
-    position: relative;
-    clear: both; /* Clear the float so the footer doesn't overlap with aside */
-    margin-top: 20px;
+    position: relative; /* Relative positioning for footer */
+    clear: both; /* Clear both floating elements (article and aside) */
 }
 
-/* Form Styling */
+/* Footer Links */
+footer a {
+    color: #003366; /* Dark Blue for link text */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Hover effect for footer links */
+}
+
+/* Form Style */
 form {
     margin: 20px auto;
     max-width: 600px;
@@ -100,6 +109,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Form Labels */
 form label {
     display: block;
     font-size: 16px;
@@ -107,6 +117,7 @@ form label {
     margin: 10px 0 5px;
 }
 
+/* Form Input and Textarea Fields */
 form input[type="text"],
 form input[type="email"],
 form textarea {
@@ -115,16 +126,20 @@ form textarea {
     margin-bottom: 20px;
     border: 1px solid #DDD;
     border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
+/* Form Submit Button */
 form input[type="submit"] {
-    background-color: #003366;
+    background-color: #003366; 
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    display: block;
     margin: 0 auto;
 }
 
@@ -145,56 +160,61 @@ form input[type="submit"]:hover {
 }
 
 .table-5x5 th {
-    background-color: #003366;
+    background-color: #003366; /* Dark Blue for table header */
     color: white;
     text-align: left;
 }
 
+aside ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+aside ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.float-right {
+    float: right; /* Float property to position elements to the side */
+    margin: 0 20px 20px 0;
+}
+
+.relative-position {
+    position: relative; /* Relative positioning for additional control */
+}
+
+.absolute-position {
+    position: absolute; /* Absolute positioning for specific elements */
+    top: 10px;
+    right: 10px;
+}
+
 /* Element Selector */
 h1 {
-    color: #003366;
+    color: #003366; /* Dark Blue for all H1 elements */
 }
 
 /* Class Selector */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Used for form fields spacing */
+}
+
+#site-title {
+    color: #FFFFFF; /* White color */
 }
 
 /* ID Selector */
-#site-title {
-    color: #FFFFFF;
-}
-
 #unique-element {
-    background-color: #FFD700;
+    background-color: #FFD700; /* Unique background color for specific element */
     padding: 10px;
     border-radius: 5px;
 }
 
-/* Reference Page Styling */
-.reference-page {
-    padding: 20px;
-    background-color: #FAF3E0;
-}
-
-.reference-page h1 {
-    color: #003366;
-}
-
-.reference-page ol {
-    margin: 20px 0;
-}
-
-.reference-page li {
-    margin-bottom: 10px;
-}
-
-.reference-page aside {
-    padding: 10px;
-    background-color: #FFD700;
-    color: #003366;
-    border-radius: 5px;
-}
 
 
 
