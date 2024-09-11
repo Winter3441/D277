@@ -1,5 +1,4 @@
 
-/* Basic Body Style */
 body {
     background-color: #FAF3E0;
     color: #3E3E3E;
@@ -20,6 +19,7 @@ header {
 header h1 {
     font-family: 'Brush Script MT', cursive; /* Header Font for "Brush Script" */
     font-size: 48px;
+    color: #FFFFFF;
 }
 
 /* Navigation Style */
@@ -150,7 +150,7 @@ form input[type="submit"]:hover {
     text-align: left;
 }
 
-
+/* List Styling */
 aside ol {
     list-style-type: decimal;
     padding-left: 20px;
@@ -161,11 +161,10 @@ aside ul {
     padding-left: 20px;
 }
 
-
+/* Alignment and Positioning */
 .align-center {
     text-align: center;
 }
-
 
 .float-right {
     float: right; /* Float property to position elements to the side */
@@ -192,13 +191,38 @@ h1 {
     margin-bottom: 20px; /* Used for form fields spacing */
 }
 
+/* ID Selector */
 #site-title {
     color: #FFFFFF; /* White color */
 }
 
-/* ID Selector */
 #unique-element {
     background-color: #FFD700; /* Unique background color for specific element */
     padding: 10px;
+    border-radius: 5px;
+}
+
+/* Reference Page Styling */
+.reference-page {
+    padding: 20px;
+    background-color: #FAF3E0; /* Sand color for background */
+}
+
+.reference-page h1 {
+    color: #003366; /* Dark Blue for header */
+}
+
+.reference-page ol {
+    margin: 20px 0;
+}
+
+.reference-page li {
+    margin-bottom: 10px;
+}
+
+.reference-page aside {
+    padding: 10px;
+    background-color: #FFD700; /* California Gold for aside */
+    color: #003366;
     border-radius: 5px;
 }
