@@ -1,6 +1,7 @@
 /* Basic Body Style */
+/* Basic Body Style with Absolute Positioning */
 body {
-    position: absolute; /* Absolute positioning for the body */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #FAF3E0;
     color: #3E3E3E;
     font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ensures body takes at least full viewport height */
 }
 
 /* Header Style */
@@ -17,7 +19,7 @@ header {
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
-    position: relative; /* Relative positioning for header */
+    position: relative;
 }
 
 header h1 {
@@ -57,35 +59,34 @@ nav ul li a:hover {
 /* Main Content */
 main {
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    overflow: auto; /* Ensures the content doesn't overlap */
+    min-height: 600px; /* Ensures enough space for the aside content */
 }
 
 /* Aside element with Float */
 aside {
-    float: right; /* Float property to position the aside element on the right */
+    float: right;
     width: 25%;
     padding: 10px;
-    background-color: #FFD700; /* California Gold for aside */
+    background-color: #FFD700;
     color: #003366;
     border-radius: 5px;
     margin-right: 20px;
-}
-
-/* Contact Image Styling */
-.contact-image {
-    display: block;
-    margin: 0 auto 20px;
-    max-width: 100%;
+    margin-top: 20px;
     height: auto;
+    max-height: 400px; /* Limit the height of aside */
+    box-sizing: border-box;
 }
 
-/* Footer Style with Relative Positioning */
+/* Footer Style with Clearfix for Aside */
 footer {
     background-color: #FFD700;
     color: #003366;
     padding: 20px;
     text-align: center;
-    position: relative; /* Relative positioning for footer */
+    position: relative;
+    clear: both; /* Clear the float so the footer doesn't overlap with aside */
     margin-top: 20px;
 }
 
@@ -195,5 +196,6 @@ h1 {
     color: #003366;
     border-radius: 5px;
 }
+
 
 
