@@ -14,7 +14,6 @@ header {
     padding: 20px;
     text-align: center;
     position: relative; /* Relative positioning for header */
-    overflow: hidden; /* Clearfix for floated elements */
 }
 
 header h1 {
