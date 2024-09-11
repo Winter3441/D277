@@ -1,4 +1,5 @@
 /* Basic Body Style */
+/* Basic Body Style */
 body {
     background-color: #FAF3E0;
     color: #3E3E3E;
@@ -13,17 +14,19 @@ header {
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
+    position: relative; /* Relative positioning for header */
 }
 
 header h1 {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Brush Script MT', cursive; /* Header Font for "Brush Script" */
     font-size: 48px;
+    color: #FFFFFF;
 }
 
 /* Navigation Style */
 nav {
     text-align: center;
-    background-color: #FFD700;
+    background-color: #FFD700; /* California Gold for the navigation bar */
     padding: 10px;
 }
 
@@ -39,40 +42,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #003366;
+    color: #003366; /* Dark Blue for navigation links */
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Hover effect for navigation buttons */
 }
 
-/* Main Content */
+/* Main Style */
 main {
     padding: 20px;
-    margin-right: 220px; /* Allows room for the aside */
-}
-
-/* Aside Style */
-aside {
-    float: right; /* Positions aside to the right */
-    width: 200px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    margin-right: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-/* Article Style */
-article {
-    margin: 0 auto;
-    max-width: 700px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Contact Image Styling */
@@ -85,22 +67,21 @@ article {
 
 /* Footer Style */
 footer {
-    background-color: #FFD700;
-    color: #003366;
+    background-color: #FFD700; /* California Gold for the footer */
+    color: #003366; /* Dark Blue text */
     padding: 20px;
     text-align: center;
-    position: relative;
-    clear: both; 
+    position: relative; /* Relative positioning for footer */
 }
 
 /* Footer Links */
 footer a {
-    color: #003366;
+    color: #003366; /* Dark Blue for link text */
     text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Hover effect for footer links */
 }
 
 /* Form Style */
@@ -137,7 +118,7 @@ form textarea {
 
 /* Form Submit Button */
 form input[type="submit"] {
-    background-color: #003366;
+    background-color: #003366; /* Dark Blue for the button */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -149,70 +130,102 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #002244;
+    background-color: #002244; /* Darker blue for hover */
 }
 
 /* Table Styling */
 .table-5x5 {
-    width: 100%;
     border-collapse: collapse;
-    margin: 20px auto;
-    table-layout: fixed;
+    width: 100%;
 }
 
 .table-5x5 th,
 .table-5x5 td {
     border: 1px solid #ddd;
-    padding: 12px 8px;
-    text-align: left;
-    word-wrap: break-word;
+    padding: 8px;
 }
 
 .table-5x5 th {
-    background-color: #003366;
+    background-color: #003366; /* Dark Blue for table header */
     color: white;
-    font-weight: bold;
+    text-align: left;
 }
 
-.table-5x5 td {
-    background-color: #FAF3E0;
-    color: #3E3E3E;
+/* List Styling */
+aside ol {
+    list-style-type: decimal;
+    padding-left: 20px;
 }
 
-.table-5x5 tr:hover {
-    background-color: #FFD700;
+aside ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-/* Float and Positioning */
+/* Alignment and Positioning */
+.align-center {
+    text-align: center;
+}
+
 .float-right {
-    float: right;
+    float: right; /* Float property to position elements to the side */
     margin: 0 20px 20px 0;
 }
 
 .relative-position {
-    position: relative;
+    position: relative; /* Relative positioning for additional control */
 }
 
 .absolute-position {
-    position: absolute;
+    position: absolute; /* Absolute positioning for specific elements */
     top: 10px;
     right: 10px;
 }
 
 /* Element Selector */
 h1 {
-    color: #FFFFFF;
+    color: #003366; /* Dark Blue for all H1 elements */
 }
 
 /* Class Selector */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Used for form fields spacing */
 }
 
 /* ID Selector */
+#site-title {
+    color: #FFFFFF; /* White color */
+}
+
 #unique-element {
-    background-color: #FFD700;
+    background-color: #FFD700; /* Unique background color for specific element */
     padding: 10px;
     border-radius: 5px;
 }
+
+/* Reference Page Styling */
+.reference-page {
+    padding: 20px;
+    background-color: #FAF3E0; /* Sand color for background */
+}
+
+.reference-page h1 {
+    color: #003366; /* Dark Blue for header */
+}
+
+.reference-page ol {
+    margin: 20px 0;
+}
+
+.reference-page li {
+    margin-bottom: 10px;
+}
+
+.reference-page aside {
+    padding: 10px;
+    background-color: #FFD700; /* California Gold for aside */
+    color: #003366;
+    border-radius: 5px;
+}
+
 
