@@ -14,13 +14,20 @@ header {
     padding: 20px;
     text-align: center;
     position: relative; /* Relative positioning for header */
+    overflow: hidden; /* Clearfix for floated elements */
 }
 
 header h1 {
     font-family: 'Brush Script MT', cursive; /* Header Font for "Brush Script" */
     font-size: 48px;
     color: #FFFFFF;
+    float: left; /* Float h1 to the left */
+    margin-right: 20px; /* Space between h1 and other elements */
 }
+
+header .header-elements {
+    float: right; /* Float other header elements to the right */
+    text-align: right;
 
 /* Navigation Style */
 nav {
