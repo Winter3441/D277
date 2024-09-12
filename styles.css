@@ -1,6 +1,8 @@
 /* Basic Body Style */
 article {
-    position: absolute;
+    position: relative;
+    left: 20;
+    right: 20;
 }
 body {
     background-color: #FAF3E0;
