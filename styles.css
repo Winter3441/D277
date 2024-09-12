@@ -1,5 +1,4 @@
 /* Basic Body Style */
-}
 body {
     background-color: #FAF3E0;
     color: #3E3E3E;
@@ -201,10 +200,6 @@ aside ul {
     position: relative; /* Relative positioning for additional control */
 }
 
-aside.absolute-position {
-    position: absolute; /* Absolute positioning for specific elements */
-    top: 10px;
-    right: 10px;
 }
 
 /* Element Selector */
