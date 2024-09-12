@@ -93,6 +93,22 @@ footer a:hover {
     text-decoration: underline; /* Hover effect for footer links */
 }
 
+/* Back to Top Button (absolute positioning) */
+#back-to-top {
+    position: absolute;
+    bottom: 20px; /* 20px from the bottom of the footer */
+    right: 20px; /* 20px from the right of the footer */
+    background-color: #003366; /* Dark Blue background for the button */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#back-to-top:hover {
+    background-color: #002244; /* Darker blue for hover */
+}
 /* Form Style */
 form {
     margin: 20px auto;
