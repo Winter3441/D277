@@ -1,4 +1,7 @@
 /* Basic Body Style */
+article {
+    position: absolute;
+}
 body {
     background-color: #FAF3E0;
     color: #3E3E3E;
@@ -222,6 +225,7 @@ h1 {
 
 .reference-page ol {
     margin: 20px 0;
+    position: relative;
 }
 
 .reference-page li {
